@@ -5,7 +5,7 @@ version: 1.0.0
 commands:
   tell:
     aliases: ["m", "mesage", "t", "w"]
-description: Secretly tell someone something
+description: Secretly tell someone anything
 permission: default
 
 author: xZolpha
