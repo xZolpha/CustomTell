@@ -8,18 +8,19 @@
 
 namespace CustomTell;
 
-use pocketmine\command\COmmandSender;
+use pocketmine\command\CommandSender;
 use pocketmine\command\PluginCommand;
+use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginCommand{
+class Main extends PluginBase implements Listener{
 
 	public function onEnable() {
 		$this->getServer()->getPluginManager->registerEvents($this, $this);
 	}
 
 	public static $lastMessaged = [];
-	private $plugin;
+	public $plugin;
 
 	public function execute(CommandSender $sender, string $commandLabel, array $args): bool{
 		if(empty($args[1]));
