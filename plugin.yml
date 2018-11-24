@@ -1,0 +1,11 @@
+name: CustomTell
+main: CustomTell\Main;
+api: 3.0.0, 4.0.0
+version: 1.0.0
+commands:
+  tell:
+    aliases: ["m", "mesage", "t", "w"]
+description: Secretly tell someone something
+permission: default
+
+author: xZolpha
